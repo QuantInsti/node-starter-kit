@@ -10,7 +10,7 @@ pm2.connect(() => {
     instances: instances,
     max_memory_restart: `${maxMemory}M`,
     env: {
-      NODE_ENV: 'production',
+      NODE_ENV: 'development',
       NODE_PATH: '.'
     },
   }, (err) => {

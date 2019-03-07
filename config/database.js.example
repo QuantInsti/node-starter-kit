@@ -2,17 +2,18 @@ module.exports = {
   development: {
     username: 'root',
     password: null,
-    database: 'boilerplate_development',
-    host: '127.0.0.1',
-    dialect: 'postgres'
+    database: null,
+    host: 'localhost',
+    dialect: 'mysql'
   },
   test: {
     username: 'root',
-    password: null,
-    database: 'boilerplate_test',
-    host: '127.0.0.1',
-    dialect: 'postgres',
+    password: null',
+    database: null,
+    host: 'localhost',
+    dialect: 'mysql',
     logging: null
   },
   production: process.env.DATABASE_URL
 };
+
